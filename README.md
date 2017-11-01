@@ -4,3 +4,4 @@ WoTにおいて、オフライン状態の際にマップを自由に見れる�
  - WoT/res/scripts/helpers/OfflineMode.py  
  - [0.9.12] Оффлайн просмотр карт/0.9.12/scripts/client/gui/mods/observer_utils/__init__.pyc  
  - [0.9.12] Оффлайн просмотр карт/0.9.12/scripts/client/gui/mods/observer_utils/FakeAvatar.pyc  
+ - [0.9.12] Оффлайн просмотр карт/0.9.12/scripts/client/gui/mods/observer_utils/ObserverWindow.pyc  
