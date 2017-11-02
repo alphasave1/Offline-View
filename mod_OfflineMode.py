@@ -3,7 +3,7 @@ import game
 import Keys
 import BigWorld
 from helpers import OfflineMode
-spaceName='spaces/h03_shopfest_2015'
+spaceName='spaces/84_winter'
 
 class MOD:
     AUTHOR = 'Chirimen , alphasave1'
