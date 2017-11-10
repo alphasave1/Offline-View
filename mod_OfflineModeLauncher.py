@@ -34,7 +34,7 @@ class TestWindow(AbstractWindowView):
         super(TestWindow, self)._populate()
 
     def onWindowClose(self):
-               mapName=self.flashObject.as_getMapName()
+        mapName=self.flashObject.as_getMapName()
         print mapName
         self.destroy()
         start(mapName)
