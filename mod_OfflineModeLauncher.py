@@ -36,10 +36,10 @@ class TestWindow(AbstractWindowView):
         super(TestWindow, self)._populate()
 
     def onWindowClose(self):
-        self.flashObject.as_setText()
+               mapName=self.flashObject.as_getMapName()
+        print mapName
         self.destroy()
-        mapName=spaceName
-        start()
+        start(mapName)
 
 _alias = 'Main'
 _url = 'DropDown2.swf'
@@ -57,12 +57,11 @@ class MOD:
     DESCRIPTION = 'Load Mod From ModsListApi ,OfflineMode will Start.\n Elif You Push END Key,OfflineMode will End.'
     SUPPORT_URL = 'http://twitter.com/chirimenspiral , http://www.twitter.com/alphasave1'
 
-def start():
+def start(mapName):
     print 'mod_OfflineMode: start'
     if not OfflineMode.enabled():
         gui_personality.fini()
-    global spaceName
-    OfflineMode.launch(spaceName)
+    OfflineMode.launch(mapName)
 
 def shutdown():
     print 'mod_OfflineMode: shutdown'
