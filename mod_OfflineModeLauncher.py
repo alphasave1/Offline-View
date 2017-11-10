@@ -13,8 +13,6 @@ from gui.app_loader import g_appLoader
 from gui.Scaleform.framework.managers.loaders import ViewLoadParams
 from gui.modsListApi import g_modsListApi
 
-spaceName=''
-
 def init():
     manager = dependency.instance(IConnectionManager)
     manager.onConnected+=onConnected
