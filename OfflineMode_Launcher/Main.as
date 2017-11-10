@@ -142,8 +142,9 @@ package
 		{
 			py_log(this.mapName);
 		}
-      public function as_getName():String{
-return this.mapName;
-}
+                public function as_getName():String
+		{
+                        return this.mapName;
+                }
     }
 }
