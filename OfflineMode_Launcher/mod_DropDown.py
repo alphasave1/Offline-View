@@ -4,6 +4,7 @@ from gui.Scaleform.framework.entities.abstract.AbstractWindowView import Abstrac
 from gui.app_loader import g_appLoader
 from gui.Scaleform.framework.managers.loaders import ViewLoadParams
 from gui.shared.utils.key_mapping import getBigworldNameFromKey
+from gui.modsListApi import g_modsListApi
 
 class TestWindow(AbstractWindowView):
 
@@ -36,6 +37,9 @@ def onhandleKeyEvent(event):
     if key == 'KEY_F12':
         g_appLoader.getDefLobbyApp().loadView(ViewLoadParams(_alias, None))
     return None
+
+def init():
+    g_modsListApi.addModification(id='DropDown',name='DropDown',description='DropDownMenu Test Program.',enabled=True,callback=lambda: g_appLoader.getDefLobbyApp().loadView(ViewLoadParams(_alias, None)),login=True,lobby=False,icon='')
 
 from gui import InputHandler
 InputHandler.g_instance.onKeyDown += onhandleKeyEvent
